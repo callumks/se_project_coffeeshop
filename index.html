@@ -117,85 +117,81 @@
         </section>
         <section id="book-a-table" class="reservation">
           <h1 class="reservation__title">Book a table</h1>
-          <div class="form-container">
-            <form class="reservation__form">
-              <!-- Name Field -->
-              <fieldset class="form__fieldset">
-                <label for="full-name" class="form__label">Name *</label>
-                <input
-                  type="text"
-                  class="form__input"
-                  id="full-name"
-                  name="full-name"
-                  placeholder="Name Surname"
-                  required
-                />
-              </fieldset>
+          <form class="form reservation__form">
+            <!-- Name Field -->
+            <fieldset class="form__fieldset">
+              <label for="full-name" class="form__label">Name *</label>
+              <input
+                type="text"
+                class="form__input"
+                id="full-name"
+                name="full-name"
+                placeholder="Name Surname"
+                required
+              />
+            </fieldset>
 
-              <!-- Number of Guests Field -->
-              <fieldset class="form__fieldset">
-                <label for="guests" class="form__label"
-                  >Number of guests *</label
-                >
-                <input
-                  type="number"
-                  class="form__input"
-                  id="guests"
-                  name="guests"
-                  min="1"
-                  max="8"
-                  placeholder="1-8"
-                  required
-                />
-              </fieldset>
+            <!-- Number of Guests Field -->
+            <fieldset class="form__fieldset">
+              <label for="guests" class="form__label">Number of guests *</label>
+              <input
+                type="number"
+                class="form__input"
+                id="guests"
+                name="guests"
+                min="1"
+                max="8"
+                placeholder="1-8"
+                required
+              />
+            </fieldset>
 
-              <!-- Date and Time Field -->
-              <fieldset class="form__fieldset">
-                <label for="date-time" class="form__label">Date & Time *</label>
-                <input
-                  type="datetime-local"
-                  class="form__input"
-                  id="date-time"
-                  name="date-time"
-                  min="2024-11-02T00:00"
-                  max="2025-11-02T00:00"
-                  required
-                />
-              </fieldset>
+            <!-- Date and Time Field -->
+            <fieldset class="form__fieldset">
+              <label for="date-time" class="form__label">Date & Time *</label>
+              <input
+                type="datetime-local"
+                class="form__input"
+                id="date-time"
+                name="date-time"
+                min="2024-11-02T00:00"
+                max="2025-11-02T00:00"
+                required
+              />
+            </fieldset>
 
-              <!-- Email Field -->
-              <fieldset class="form__fieldset">
-                <label for="email" class="form__label">Your email *</label>
-                <input
-                  type="email"
-                  class="form__input"
-                  id="email"
-                  name="email"
-                  placeholder="email@email.com"
-                  required
-                />
-              </fieldset>
+            <!-- Email Field -->
+            <fieldset class="form__fieldset">
+              <label for="email" class="form__label">Your email *</label>
+              <input
+                type="email"
+                class="form__input"
+                id="email"
+                name="email"
+                placeholder="email@email.com"
+                required
+              />
+            </fieldset>
 
-              <!-- Submit Button -->
-              <fieldset class="form__fieldset">
-                <button type="submit" class="form__button">Book a table</button>
-              </fieldset>
+            <!-- Submit Button -->
+            <fieldset class="form__fieldset">
+              <button type="submit" class="form__button">Book a table</button>
+            </fieldset>
 
-              <!-- Terms and Conditions Checkbox -->
-              <fieldset class="form__fieldset">
-                <input
-                  type="checkbox"
-                  class="form__input"
-                  name="tos-agree"
-                  id="tos-agree"
-                  required
-                />
-                <label for="tos-agree" class="form__label"
-                  >I agree with the terms of use</label
-                >
-              </fieldset>
-            </form>
-          </div>
+            <!-- Terms and Conditions Checkbox -->
+            <fieldset class="form__fieldset">
+              <input
+                type="checkbox"
+                class="form__input"
+                name="tos-agree"
+                id="tos-agree"
+                required
+              />
+              <label for="tos-agree" class="form__label"
+                >I agree with the terms of use</label
+              >
+            </fieldset>
+          </form>
         </section>
         <section id="menu" class="menu"></section>
         <section id="contacts" class="about"></section>
