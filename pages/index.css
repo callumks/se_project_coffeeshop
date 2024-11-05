@@ -179,7 +179,7 @@ color: #d35722;
   padding: 0;
 }
 
-.form-container {
+.form {
   height: 100vh;
   display: flex;
   justify-content: center;
