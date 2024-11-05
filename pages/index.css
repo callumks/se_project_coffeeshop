@@ -174,11 +174,6 @@ color: #d35722;
   background-position: center;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
 .form {
   height: 100vh;
   display: flex;
