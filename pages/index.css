@@ -178,7 +178,9 @@ color: #d35722;
   height: 100vh;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
+  flex-wrap: nowrap;
 }
 
 .reservation__form {
@@ -192,8 +194,10 @@ color: #d35722;
   padding-top: 100px;
   display: flex;
   justify-content: center;
-  font-weight: bold;
-  font-size: 33px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
   margin-bottom: 80px;
 }
 
@@ -204,6 +208,7 @@ color: #d35722;
 
 .form__label {
   display: block;
+  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
@@ -225,7 +230,11 @@ color: #d35722;
   background: #ffffff;
   border: 1px solid #838383;
   box-sizing: border-box;
-  max-height: 385px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  max-width: 385px;
   padding: 24px;
 }
 
@@ -252,12 +261,15 @@ color: #d35722;
 }
 
 .form__button[type="submit"] {
-  min-width: 117px;
+  max-width: 385px;
   min-height: 60px;
   background: #1878dc;
   border-radius: 2px;
   color: #ffffff;
-  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
   border: none;
 }
 
