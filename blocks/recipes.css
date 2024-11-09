@@ -1,0 +1,32 @@
+.recipes {
+  color: #fff;
+  background-color: #0a2750;
+  background-size: cover;
+  background-image: url(../images/background_recipes.svg);
+}
+.recipes__title {
+  max-width: 580px;
+  padding-top: 100px;
+  margin-left: 80px;
+  margin-bottom: 24px;
+}
+
+.recipes__subtitle {
+  max-width: 438px;
+  margin-top: 0;
+  margin-left: 80px;
+}
+
+.recipes__videos {
+  margin-top: 80px;
+  padding-bottom: 215px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40px;
+}
+
+.video-info {
+  display: flex;
+  justify-content: space-between;
+}

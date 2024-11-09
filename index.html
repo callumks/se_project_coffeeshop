@@ -14,7 +14,6 @@
     />
     <title>Callum's Specialty Coffee</title>
     <link rel="shortcut icon" href="favicon.ico" />
-    <link rel="stylesheet" href="./vendor/normalize.css" />
     <link rel="stylesheet" href="./pages/index.css" />
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -78,6 +77,7 @@
         </div>
       </header>
       <main class="content">
+        <!--RECIPES BLOCK START-->
         <section id="recipes" class="recipes">
           <h2 class="recipes__title">Recipes</h2>
           <p class="recipes__subtitle">
@@ -115,6 +115,7 @@
             </div>
           </div>
         </section>
+        <!--RESERVATION BLOCK START-->
         <section id="book-a-table" class="reservation">
           <h2 class="reservation__title">Book a table</h2>
           <form class="form reservation__form">
@@ -193,10 +194,160 @@
             </fieldset>
           </form>
         </section>
-        <section id="menu" class="menu"></section>
-        <section id="contacts" class="about"></section>
-      </main>
-      <footer class="footer"></footer>
+        <!--MENU BLOCK START-->
+        <section id="menu" class="menu">
+          <h1 class="menu__title">Menu</h1>
+          <p class="menu__subtitle">
+            We brew coffee from locally roasted, Fairtrade certified beans and
+            use biodegradable cups. All teas from our collection are $2/cup.
+        </p>
+          <div class="menu__cards">
+            <!--FILTER CARD-->
+            <card class="card">
+              <h2 class="card__title">Filter</h2>
+              <li class="card__list-item">
+                Regular (12 oz)
+                <span class="card__list-divider">______________________________________________________</span>
+                $1
+              </li>
+              <li class="card__list-item">
+                Large (16 oz)
+                <span class="card__list-divider">_____________________________________________________</span>
+                $1.25
+              </li>
+              <li class="card__list-item">
+                XL (20 oz)
+                <span class="card__list-divider">___________________________________________________________</span>
+                $1
+              </li>
+              <li class="card__list-item">
+                Party-size (24 oz, decaf)
+                <span class="card__list-divider">_________________________________________</span>
+                $1.75
+              </li>
+              <li class="card__list-item">
+                Iced Coffee (16 oz)
+                <span class="card__list-divider">_______________________________________________</span>
+                $1.25
+              </li>
+            </card>
+            <!--ESPRESSO CARD-->
+            <card class="card">
+              <h2 class="card__title">Espresso</h2>
+              <li class="card__list-item">
+                Macchiato
+                <span class="card__list-divider">________________________________________________________</span>
+                $2.25
+              </li>
+              <li class="card__list-item">
+                Cortado
+                <span class="card__list-divider">___________________________________________________________</span>
+                $2.5
+              </li>
+              <li class="card__list-item">
+                Flat White
+                <span class="card__list-divider"></span>___________________________________________________________</span
+                >
+                $3
+              </li>
+              <li class="card__list-item">
+                Mocha
+                <span class="card__list-divider"
+                  >______________________________________________________________</span
+                >
+                $3
+              </li>
+              <li class="card__list-item">
+                Sunrise in the Bay Area (decaf)
+                <span class="card__list-divider"
+                  >____________________________________</span
+                >
+                $10
+              </li>
+            </card>
+            <!--BAKED GOODS CARD-->
+            <card class="card">
+              <h2 class="card__title">Baked Goods</h2>
+              <li class="card__list-item">
+                Almond Croissant
+                <span class="card__list-divider">___________________________________________________</span>
+                $2
+              </li>
+              <li class="card__list-item">
+                Banana Bread
+                <span class="card__list-divider">____________________________________________________</span>
+                $1.75
+              </li>
+              <li class="card__list-item">
+                Key Lime Pie
+                <span class="card__list-divider">________________________________________________________</span>
+                $3
+              </li>
+              <li class="card__list-item">
+                Blue Velvet Cake
+                <span class="card__list-divider">_________________________________________________</span>
+                $3.75
+              </li>
+              <li class="card__list-item">
+                Web Cookie
+                <span class="card__list-divider">_________________________________________________________</span>
+                $2
+              </li>
+              <li class="card__list-item">
+                Cinnamon Swirl
+                <span class="card__list-divider">__________________________________________________</span>
+                $1.25
+              </li>
+            </card>
+          </div>
+        </section>
+        <!-- ABOUT BLOCK START -->
+<section class="about">
+    <h2 class="about__title">About the<br> coffee shop</h2>
+    <span class="about__circle"></span>
+    <span class="about__circle about__circle_animation_blurred"></span>
+    <div class="about__content">
+      <p class="about__paragraph">Our coffee shop is located in the Triple Peaks Library. It features 6 tables and free WiFi.</p> 
+      <p class="about__paragraph">Our main mission is keeping guests cozy and energized.</p>
+      <p class="about__paragraph">Besides that, we try to reduce our environmental impact — so we don't sell single-use cups. But you can buy one of our reusable cups!</p>
+    </div>
+  </main>
+</section>
+<footer id="contacts" class="footer">
+  <div class="footer__content">
+    <img
+    src="./images/logo_coffeeshop_light.svg"
+    alt="Callum's Specialty Coffee Logo"
+    class="footer__logo"
+    />
+    <div class="footer__column">
+      <h4 class="footer__social-heading">Social Media</h4>
+      <ul class="footer__list">
+        <li class="footer__list-item">
+          <a href="#" class="footer__social-link">
+            <img
+            src="./images/facebook_white.svg"
+            alt="Facebook"
+            class="footer__social-icon"
+            />
+            Facebook
+          </a>
+        </li>
+        <li class="footer__list-item">
+          <a href="#" class="footer__social-link">
+            <img
+            src="./images/instagram_white.svg"
+            alt="Instagram"
+            class="footer__social-icon"
+            />
+            Instagram
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+    <p class="footer__copyright">© 2024 Callum Stoddart</p>
+</footer>
     </div>
   </body>
 </html>
