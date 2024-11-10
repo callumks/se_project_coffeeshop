@@ -1,14 +1,15 @@
 .menu {
   background-color: #fff;
   background-image: url(../images/background_menu.svg);
-  background-position: 0 auto;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 .menu__title {
   display: flex;
   justify-content: center;
-  margin-top: 100px;
   font-style: normal;
   font-weight: 500;
   font-size: 44px;
@@ -20,7 +21,7 @@
   width: 100%;
   text-align: center;
   margin: 0 auto;
-  font-family: "Noto Serif";
+  font-family: "Noto Serif", "Times New Roman", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -29,20 +30,19 @@
 
 .menu__cards {
   margin-top: 100px;
-  padding-bottom: 100px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
-.card {
+.menu__card {
   list-style: none;
   width: 540px;
 }
 
 .card__title {
   margin-bottom: 32px;
-  font-family: "Inter";
+  font-family: "Inter", Arial, sans-serif;
   font-weight: bold;
   font-size: 20px;
   line-height: 30px;
@@ -50,11 +50,24 @@
 
 .card__list-item {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  margin-bottom: 16px;
-  font-family: "Noto Serif";
+  font-family: "Noto Serif", "Times New Roman", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
+  margin-bottom: 16px;
+}
+
+.card__list-item:last-child {
+  margin-bottom: 0;
+}
+
+.card__list-divider {
+  display: inline-block;
+  width: 350px;
+  height: 1.2px;
+  background-color: black;
+  margin: 0 10px;
 }

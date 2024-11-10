@@ -5,9 +5,12 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  padding-top: 100px;
+  padding-bottom: 120px;
 }
 
-.form {
+.form__section {
+  font-family: "Inter", sans-serif;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -17,12 +20,10 @@
 }
 
 .reservation__form {
-  margin: 0 auto;
-  font-family: "Inter", sans-serif;
+  padding-bottom: 0;
 }
 
 .reservation__title {
-  padding-top: 100px;
   display: flex;
   justify-content: center;
   font-style: normal;
@@ -50,7 +51,7 @@
   margin-top: 80px;
 }
 
-.form__label[for="tos-agree"] {
+.form__label[type="tos-agree"] {
   display: inline;
   margin-left: 12px;
   vertical-align: middle;
