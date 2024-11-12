@@ -31,7 +31,7 @@
   <body>
     <div class="page">
       <header class="header">
-        <nav class="nav">
+        <nav class="header__nav">
           <img
             src="images/logo_coffeeshop_dark.svg"
             alt="Callum's Specialty Coffee Logo"
@@ -120,9 +120,9 @@
         <!--RESERVATION BLOCK START-->
         <section id="book-a-table" class="reservation">
           <h2 class="reservation__title">Book a table</h2>
-          <form class="form__section reservation__form">
+          <form class="reservation__form_section reservation__form">
             <!-- Name Field -->
-            <fieldset class="form__fieldset">
+            <fieldset class="reservation__form_fieldset">
               <label for="full-name" class="form__label">Name *</label>
               <input
                 type="text"
@@ -135,7 +135,7 @@
             </fieldset>
 
             <!-- Number of Guests Field -->
-            <fieldset class="form__fieldset">
+            <fieldset class="reservation__form_fieldset">
               <label for="guests" class="form__label">Number of guests *</label>
               <input
                 type="number"
@@ -150,7 +150,7 @@
             </fieldset>
 
             <!-- Date and Time Field -->
-            <fieldset class="form__fieldset">
+            <fieldset class="reservation__form_fieldset">
               <label for="date-time" class="form__label">Date & Time *</label>
               <input
                 type="datetime-local"
@@ -164,7 +164,7 @@
             </fieldset>
 
             <!-- Email Field -->
-            <fieldset class="form__fieldset">
+            <fieldset class="reservation__form_fieldset">
               <label for="email" class="form__label">Your email *</label>
               <input
                 type="email"
@@ -177,12 +177,12 @@
             </fieldset>
 
             <!-- Submit Button -->
-            <fieldset class="form__fieldset">
+            <fieldset class="reservation__form_fieldset">
               <button type="submit" class="form__button">Book a table</button>
             </fieldset>
 
             <!-- Terms and Conditions Checkbox -->
-            <fieldset class="form__fieldset">
+            <fieldset class="reservation__form_fieldset">
               <input
                 type="checkbox"
                 class="form__input"
@@ -205,9 +205,9 @@
           </p>
           <div class="menu__cards">
             <!--FILTER CARD-->
-            <card class="menu__card">
+            <div class="card">
               <h2 class="card__title">Filter</h2>
-              <ul>
+              <ul class="card__list">
                 <li class="card__list-item">
                   Regular (12 oz)
                   <span class="card__list-divider"></span>
@@ -234,11 +234,11 @@
                   $1.25
                 </li>
               </ul>
-            </card>
+            </div>
             <!--ESPRESSO CARD-->
-            <card class="menu__card">
+            <div class="card">
               <h2 class="card__title">Espresso</h2>
-              <ul>
+              <ul class="card__list">
                 <li class="card__list-item">
                   Macchiato
                   <span class="card__list-divider"></span>
@@ -265,11 +265,11 @@
                   $10
                 </li>
               </ul>
-            </card>
+            </div>
             <!--BAKED GOODS CARD-->
-            <card class="menu__card">
+            <div class="card">
               <h2 class="card__title">Baked Goods</h2>
-              <ul>
+              <ul class="card__list">
                 <li class="card__list-item">
                   Almond Croissant
                   <span class="card__list-divider"></span>
@@ -301,15 +301,12 @@
                   $1.25
                 </li>
               </ul>
-            </card>
+            </div>
           </div>
         </section>
         <!-- ABOUT BLOCK START -->
         <section class="about">
-          <h2 class="about__title">
-            About the<br />
-            coffee shop
-          </h2>
+          <h2 class="about__title">About the coffee shop</h2>
           <div class="about__content">
             <p class="about__paragraph">
               Our coffee shop is located in the Triple Peaks Library. It

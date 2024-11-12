@@ -4,8 +4,8 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .menu__title {
   display: flex;
@@ -14,6 +14,7 @@
   font-weight: 500;
   font-size: 44px;
   line-height: 52px;
+  margin-bottom: 24px;
 }
 
 .menu__subtitle {
@@ -33,10 +34,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  gap: 100px;
 }
 
-.menu__card {
-  list-style: none;
+.card {
   width: 540px;
 }
 
