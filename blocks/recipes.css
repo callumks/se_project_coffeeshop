@@ -51,3 +51,13 @@
   margin-top: 24px;
   margin-bottom: 0;
 }
+
+.recipes__video-caption {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.recipes__video-duration {
+  margin-top: 0;
+  margin-bottom: 0;
+}

@@ -9,7 +9,7 @@
   padding-bottom: 120px;
 }
 
-.reservation__form_section {
+.reservation__form-section {
   font-family: "Inter", sans-serif;
   height: 100vh;
   display: flex;
@@ -19,11 +19,8 @@
   flex-wrap: nowrap;
 }
 
-.reservation__form {
-  margin: 0 auto;
-}
-
 .reservation__title {
+  display: flex;
   justify-content: center;
   max-width: 385px;
   font-style: normal;
@@ -34,8 +31,11 @@
   margin-top: 0;
 }
 
-.reservation__form_fieldset {
-  margin-bottom: 32px;
+.reservation__form {
+  margin: 0 auto;
+}
+
+.reservation__form-fieldset {
   border: none;
 }
 
@@ -48,17 +48,6 @@
   margin-bottom: 8px;
 }
 
-.form__label_full-name {
-  margin-top: 80px;
-}
-
-.form__label[type="tos-agree"] {
-  display: inline;
-  margin-left: 12px;
-  vertical-align: middle;
-  font-weight: 400;
-}
-
 .form__input {
   background: #ffffff;
   border: 1px solid #838383;
@@ -67,18 +56,34 @@
   font-weight: normal;
   font-size: 20px;
   line-height: 30px;
-  max-width: 385px;
+  width: 385px;
   padding: 24px;
 }
 
-.form__input[type="text"],
-.form__input[type="number"],
-.form__input[type="datetime-local"],
-.form__input[type="email"],
-.form__input[type="submit"] {
-  border-radius: 4px;
-  min-width: 385px;
-  height: 60px;
+.form__label--full-name {
+  margin-top: 80px;
+}
+
+.form__label--checkbox {
+  display: inline;
+  margin-left: 12px;
+  vertical-align: middle;
+  font-weight: 400;
+}
+
+.form__input--text {
+}
+
+.form__input--number {
+}
+
+.form__input--datetime-local {
+}
+
+.form__input--email {
+}
+
+.form__input--submit {
 }
 
 .form__input::placeholder {
@@ -86,14 +91,14 @@
   color: #8b8b8b;
 }
 
-.form__input[type="checkbox"] {
+.form__checkbox {
   border-radius: 4px;
   min-width: 28px;
   min-height: 28px;
   vertical-align: middle;
 }
 
-.form__button[type="submit"] {
+.form__button--submit {
   width: 385px;
   min-height: 60px;
   background: #1878dc;
@@ -111,7 +116,7 @@
   transition: 0.2s ease-in-out;
 }
 
-.form__button[type="reset"] {
+.form__button--reset {
   border: none;
   background: none;
   color: darkslategray;
@@ -119,8 +124,7 @@
   margin-left: 20px;
 }
 
-.form__input[type="text"]:focus,
-.form__input[type="password"]:focus {
+.form__input:focus {
   outline-color: #2f71e5;
   outline-style: solid;
   outline-width: 1px;
