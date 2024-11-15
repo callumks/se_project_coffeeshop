@@ -99,7 +99,7 @@
   vertical-align: middle;
 }
 
-.form__button--submit {
+.form__button {
   width: 385px;
   min-height: 60px;
   background: #1878dc;
