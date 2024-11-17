@@ -31,7 +31,7 @@
   <body>
     <div class="page">
       <header class="header">
-        <nav class="header__nav">
+        <nav class="nav">
           <img
             src="images/logo_coffeeshop_dark.svg"
             alt="Callum's Specialty Coffee Logo"
@@ -118,12 +118,12 @@
           </div>
         </section>
         <!--RESERVATION BLOCK START-->
-        <section class="reservation">
+        <section id="book-a-table" class="reservation">
           <h2 class="reservation__title">Book a Table</h2>
-          <form class="reservation__form">
+          <form class="form reservation__form">
             <!-- Name Field -->
             <fieldset class="form__fieldset">
-              <label class="form__label">Name *</label>
+              <label for="full-name" class="form__label">Name *</label>
               <input
                 type="text"
                 class="form__input"
@@ -135,7 +135,7 @@
 
             <!-- Number of Guests Field -->
             <fieldset class="form__fieldset">
-              <label class="form__label">Number of guests *</label>
+              <label for="guests" class="form__label">Number of guests *</label>
               <input
                 type="number"
                 class="form__input"
@@ -149,7 +149,7 @@
 
             <!-- Date and Time Field -->
             <fieldset class="form__fieldset">
-              <label class="form__label">Date & Time *</label>
+              <label for="date-time" class="form__label">Date & Time *</label>
               <input
                 type="datetime-local"
                 class="form__input"
@@ -162,7 +162,7 @@
 
             <!-- Email Field -->
             <fieldset class="form__fieldset">
-              <label class="form__label">Your email *</label>
+              <label for="email" class="form__label">Your email *</label>
               <input
                 type="email"
                 class="form__input"
@@ -185,7 +185,7 @@
                 name="tos-agree"
                 required
               />
-              <label class="form__label form__label--checkbox">
+              <label class="form__label_type_checkbox">
                 I agree with the terms of use
               </label>
             </fieldset>
